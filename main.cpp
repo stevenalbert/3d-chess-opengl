@@ -4,8 +4,9 @@ using namespace std;
 #ifdef __APPLE__
     #include <GLUT/glut.h>
 #else
+    #include <GL/freeglut.h>
     #include <GL/glut.h>
-#endif // __APPLE__
+#endif // GLUT Library
 //Model
 #include "Model.h"
 //Chess Game
@@ -638,7 +639,7 @@ void keyFunction(unsigned char key, int x, int y)
 						if(needPromote) break;
                         endOfTurn();
                     }
-                    else selected = false;
+                    selected = false;
                 }
                 else if(chess->isSquareOccupied(selectedRow, selectedCol) && chess->getPieceColor(selectedRow, selectedCol) == chess->getTurnColor())
                 {

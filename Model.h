@@ -4,8 +4,6 @@
 #include <vector>
 #include <string>
 
-#include <GL/freeglut.h>
-
 class Model
 {
 private:

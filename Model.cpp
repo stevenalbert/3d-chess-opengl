@@ -5,6 +5,11 @@
 #include <iostream>
 
 #include "Model.h"
+#ifdef __APPLE__
+    #include <GLUT/glut.h>
+#else
+    #include <GL/glut.h>
+#endif // GLUT Library
 
 Model::Model(std::string objFilePath)
 {
