@@ -38,3 +38,6 @@
 # generated directories
 bin/
 obj/
+
+# model obj
+!model/*.obj
