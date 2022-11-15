@@ -53,23 +53,23 @@ void GameStatus::setLastColRookMove(PieceColor color)
 bool GameStatus::isKingMove(PieceColor color)
 {
 	if(color==PieceColor::WHITE) return whiteKingMove;
-	else if(color==PieceColor::BLACK) return blackKingMove;
+	else return blackKingMove;
 }
 
 Piece* GameStatus::pieceEnPassantable(PieceColor color)
 {
 	if(color==PieceColor::WHITE) return whitePieceEnPassant;
-	else if(color==PieceColor::BLACK) return blackPieceEnPassant;
+	else return blackPieceEnPassant;
 }
 
 bool GameStatus::isFirstColRookMove(PieceColor color)
 {
 	if(color==PieceColor::WHITE) return whiteFirstColRookMove;
-	else if(color==PieceColor::BLACK) return blackFirstColRookMove;
+	else return blackFirstColRookMove;
 }
 
 bool GameStatus::isLastColRookMove(PieceColor color)
 {
 	if(color==PieceColor::WHITE) return whiteLastColRookMove;
-	else if(color==PieceColor::BLACK) return blackLastColRookMove;
+	else return blackLastColRookMove;
 }
