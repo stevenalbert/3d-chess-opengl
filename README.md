@@ -21,7 +21,17 @@ git clone https://github.com/stevenalbert/3d-chess-opengl
 
 __Notes:__ 
 To run this program please put the executable file and model directory in the same directory.
-This program only tested on Windows.
+This program has only been tested on Windows and Linux.
+
+### How to build and run on Linux
+
+```bash
+# build
+mkdir -p bin && g++ main.cpp Model.cpp Chess/*.cpp `pkgconf --libs glut gl glu` -o bin/3d-chess-opengl
+
+# run
+bin/3d-chess-opengl
+```
 
 ## Game Details
 ### Rules
